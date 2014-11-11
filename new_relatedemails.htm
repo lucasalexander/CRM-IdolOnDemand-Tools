@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var indexName = "YOUR_INDEX_NAME";
+	var apiKey = "YOUR_API_KEY_HERE";
+	var entityId = getParameterByName('id');
+	
+	//strip brackets because we indexed a string value of the guid without them
+	entityId = entityId.replace("{","").replace("}","");
+
+	//alert(entityId);
+	
+    $.getJSON("https://api.idolondemand.com/1/api/sync/findsimilar/v1?indexes="+indexName+"&apikey="+apiKey+"&summary=context&index_reference="+entityId,function(data){
+		var content = "";
+		$(content).text("");
+		$.each(data.documents, function(i,document){
+    		content += '<p><a href="/main.aspx?etn=email&id={' + document.reference + '}&newWindow=true&pagetype=entityrecord" target="_blank">' + document.title + '</a>';
+			content += '<br />Score: ' + document.weight + '';
+       		content += '<br />' + document.summary + '</p>';
+    	});
+		$(content).appendTo("#results");
+    });   
+});
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+</head>
+<body>
+<div id="results"></div>
+</body>
+</html>
