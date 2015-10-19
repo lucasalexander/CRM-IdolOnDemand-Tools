@@ -3,8 +3,8 @@ CRM-IdolOnDemand-Tools
 
 This is a collection of sample code for creating plug-ins and workflow assemblies to use [HP IDOL OnDemand](http://www.idolondemand.com) APIs from within Microsoft Dynamics CRM.
 
-This code corresponds to a series of posts on the HP Enterprise Services Applications Services blog:
+This code corresponds to a series of posts I originally wrote for the HP Enterprise Services Applications Services blog:
 
-1. [Using IDOL OnDemand for text analysis in Dynamics CRM Part 1](http://h30507.www3.hp.com/t5/Applications-Services-Blog/Using-IDOL-OnDemand-for-text-analysis-in-Dynamics-CRM-Part-1/ba-p/171242)
-2. [Using IDOL OnDemand for text analysis in Dynamics CRM Part 2](http://h30507.www3.hp.com/t5/Applications-Services-Blog/Using-IDOL-OnDemand-for-text-analysis-in-Dynamics-CRM-Part-2/ba-p/171424)
-3. [Using IDOL OnDemand for text analysis in Dynamics CRM Part 3](http://h30507.www3.hp.com/t5/Applications-Services-Blog/Using-IDOL-OnDemand-for-text-analysis-in-Dynamics-CRM-Part-3/ba-p/171816)
+1. [Using IDOL OnDemand for text analysis in Dynamics CRM Part 1](http://alexanderdevelopment.net/post/2014/09/29/using-idol-ondemand-for-text-analysis-in-dynamics-crm-part-3/)
+2. [Using IDOL OnDemand for text analysis in Dynamics CRM Part 2](http://alexanderdevelopment.net/post/2014/09/24/using-idol-ondemand-for-text-analysis-in-dynamics-crm-part-2/)
+3. [Using IDOL OnDemand for text analysis in Dynamics CRM Part 3](http://alexanderdevelopment.net/post/2014/09/29/using-idol-ondemand-for-text-analysis-in-dynamics-crm-part-3/)
